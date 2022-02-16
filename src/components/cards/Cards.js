@@ -45,7 +45,7 @@ function Cards() {
 
             <CardItems
               src="images/asteroid.jpg"
-              text="Cosmic visitor ‘Oumuamua may have been ripped from an alien world"
+              text="Cigar-shaped interstellar cosmic visitor ‘Oumuamua may have been ripped from an alien world"
               label="COSMO"
               path="https://astronomy.com/news/2020/04/interstellar-visitor-oumuamua-maybe-a-chunk-of-a-shredded-alien-world"
             />
