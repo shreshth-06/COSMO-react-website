@@ -31,14 +31,14 @@ function Cards() {
           <ul className="cards__items">
             <CardItems
               src="images/sun-probe.png"
-              text="Traveling to the Sun: Why Won’t Parker Solar Probe Melt?"
+              text="Traveling to the Sun: Why Won’t NASA's Parker Solar Probe Melt? | Facing the heat of sun?"
               label="COSMO"
               path="https://www.nasa.gov/feature/goddard/2018/traveling-to-the-sun-why-won-t-parker-solar-probe-melt"
             />
 
             <CardItems
               src="images/black-holes.jpg"
-              text="8 ways we know that black holes really do exist"
+              text="8 ways we know that black holes really do exist | Scientific truth of Black Holes"
               label="COSMO"
               path="https://www.livescience.com/how-we-know-black-holes-exist.html"
             />
