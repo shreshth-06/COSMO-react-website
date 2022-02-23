@@ -3,6 +3,7 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Button } from "./Button";
 import "./Navbar.css";
+import { animateScroll as scroll } from "react-scroll";
 
 function Navbar(props) {
   const [click, setClick] = useState(false);
@@ -20,8 +21,11 @@ function Navbar(props) {
       behavior: "smooth",
     });
   }
-  const closeMenu = () => setClick(false);
-
+  // const closeMenu = () => setClick(false);
+  const toggleHome = () => {
+    setClick(false);
+    scroll.scrollToTop();
+  };
   const showButton = () => {
     if (window.innerWidth <= 960) {
       setButton(false);
@@ -40,7 +44,7 @@ function Navbar(props) {
     <>
       <nav className="navbar">
         <div className="navbar-container">
-          <Link to="/" className="navbar-logo" onClick={closeMenu}>
+          <Link to="/" className="navbar-logo" onClick={toggleHome}>
             COSMO <i className="fab fa-battle-net"></i>
             {/* SPACE <i className="fa fa-rocket"></i> */}
           </Link>
@@ -50,7 +54,7 @@ function Navbar(props) {
 
           <ul className={click ? "nav-menu active" : "nav-menu"}>
             <li className="nav-item">
-              <Link to="/" className="nav-links" onClick={closeMenu}>
+              <Link to="/" className="nav-links" onClick={toggleHome}>
                 Home
               </Link>
             </li>
